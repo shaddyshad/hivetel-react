@@ -1,0 +1,14 @@
+.panel {
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: #949ba2;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.panel.panel-filled {
+    background-color: rgba(68, 70, 79, 0.5);
+}
+
