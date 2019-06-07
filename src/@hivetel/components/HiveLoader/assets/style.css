@@ -1,0 +1,40 @@
+.container-comp{
+    display: flex;
+    flex-basis: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-action{
+    color: '#f18835'
+}
+
+.text-40{
+    font-size: 40px;
+}
+
+.text-20{
+    font-size: 20px;
+}
+
+.btn-warning {
+    color: #949ba2;
+    background-color: transparent;
+    border-color: #f7af3e;
+}
+
+.btn:not(:disabled):not(.disabled) {
+    cursor: pointer;
+}
+
+.btn.btn-w-md {
+    min-width: 120px;
+}
+
+.buttons-margin .btn {
+    margin-bottom: 5px;
+}
+
+.mb-16{
+    margin-bottom: 16px;
+}
