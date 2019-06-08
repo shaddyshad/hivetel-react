@@ -12,9 +12,17 @@
     componentDidMount(){
         this.props.setAccountData()
     }
+    
     render(){
+        if( !this.props.accountData || !this.props.accountData.uid){
+            return null;
+        }
         return(
-            <React.Fragment>{ ...children }</React.Fragment>
+            <React.Fragment>
+                {...this.props.children}
+            </React.Fragment>
+
+            
         )
     }
  }
@@ -26,4 +34,10 @@
      }, dispatch);
  }
 
- export default connect(mapDispatchToProps)(Account);
+ function mapStateToProps(state){
+     return {
+         accountData: state.accountData
+     }
+ }
+
+ export default connect(mapStateToProps, mapDispatchToProps)(Account);

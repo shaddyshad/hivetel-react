@@ -1,7 +1,7 @@
 import authRoles from "../../../@hivetel/config/authRoles";
 import HiveLoadable from '../../../@hivetel/components/HiveLoader';
 
-export const AnalyticsDashboardConfig = {
+const AnalyticsDashboardConfig = {
     auth: authRoles.admin,
 
     routes: [

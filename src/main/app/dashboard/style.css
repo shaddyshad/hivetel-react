@@ -1,0 +1,30 @@
+.pull-right {
+    float: right;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.view-header .header-icon {
+    font-size: 60px;
+    color: #f6a821;
+    width: 68px;
+    float: left;
+    margin-top: -8px;
+    line-height: 0;
+}
+
+.view-header {
+    margin: 20px 0;
+    min-height: 50px;
+    padding: 0 15px;
+}
+
+.view-header .header-title {
+    margin-left: 68px;
+}
+
+small, .small {
+    font-size: 83%;
+}

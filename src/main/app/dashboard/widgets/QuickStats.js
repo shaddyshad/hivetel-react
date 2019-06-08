@@ -8,7 +8,7 @@ class QuickStats extends Component{
     }
 
     render(){
-        const {figure, lastUpdated, statName, iconName} = props.data;
+        const {figure, lastUpdated, statName, iconName} = this.props.data;
         return(
             <div className="panel panel-filled">
                 <div className="panel-body">

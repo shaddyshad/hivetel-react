@@ -1,26 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from 'react';
+import AppContext from './AppContext';
+import Auth from './auth/components/Auth';
+import HiveLayout from './@hivetel/hive-layouts'
+import history from './history';
+import {Provider} from 'react-redux';
+import {BrowserRouter as Router} from 'react-router-dom';
+import store from './store';
+import routes from './@hivetel/config/routes-config';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+  render(){
+    return(
+      <AppContext.Provider value={{routes}}>
+        <Provider store={store}>
+          <Auth>
+            <Router history={history}>
+                <h3>Here</h3>
+            </Router>
+          </Auth>
+            
+        </Provider>
+      </AppContext.Provider>
+    )
+  }
 }
 
 export default App;

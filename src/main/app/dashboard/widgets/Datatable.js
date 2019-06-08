@@ -17,11 +17,11 @@ class Datatable extends Component{
         return time.format("HH:mm a");
     }
     renderDataTable = data => {
-        return data.map( ({timestamp, callerNumber, direction, agent, sessionId, agentName}) => (
+        return data.map( ({timestamp, callerNumber, direction, sessionId, agentName}) => (
             <tr>
                 <td> {this.getDate(timestamp)}</td>
                 <td> {callerNumber}</td>
-                <td> {inbound} </td>
+                <td> {direction} </td>
                 <td> {agentName }</td>
                 <td> 
                     <a className="btn btn-default btn-xs" href="#"> View </a>

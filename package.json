@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "firebase": "^6.1.1",
+    "history": "^4.9.0",
     "lodash": "^4.17.11",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
@@ -15,6 +16,7 @@
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",
     "redux": "^4.0.1",
+    "redux-thunk": "^2.3.0",
     "thunk": "^0.0.1",
     "velocity-react": "^1.4.3"
   },

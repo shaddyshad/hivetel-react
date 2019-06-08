@@ -1,5 +1,5 @@
 import Loadable from 'react-loadable';
-import Loader from './Loader';
+import Loading from './Loader';
 
 const HiveLoadable = opts => {
     return Loadable(Object.assign({
