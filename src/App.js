@@ -7,6 +7,7 @@ import {Provider} from 'react-redux';
 import {BrowserRouter as Router} from 'react-router-dom';
 import store from './store';
 import routes from './@hivetel/config/routes-config';
+import MainApp from './main'
 
 class App extends Component{
   render(){
@@ -15,7 +16,7 @@ class App extends Component{
         <Provider store={store}>
           <Auth>
             <Router history={history}>
-                <h3>Here</h3>
+                <MainApp />
             </Router>
           </Auth>
             

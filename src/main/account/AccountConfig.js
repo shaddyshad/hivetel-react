@@ -4,7 +4,8 @@ import HiveLoadable from "../../@hivetel/components/HiveLoader";
 const AccountConfig = {
     auth: authRoles.admin,
 
-    routes: {
+    routes: [
+       {
         path: '/dashboard',
         routes: [
             {
@@ -15,7 +16,8 @@ const AccountConfig = {
                 })
             }
         ]
-    }
+       }
+    ]
 }
 
 export default AccountConfig;

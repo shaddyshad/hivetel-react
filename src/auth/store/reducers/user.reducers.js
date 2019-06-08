@@ -17,6 +17,7 @@ const userReducer = (state=initialState, action) => {
                     return {...state, ...userData}
                 }).catch(err => console.log(err))
         }
+        break;
         default:
             return state;
     }

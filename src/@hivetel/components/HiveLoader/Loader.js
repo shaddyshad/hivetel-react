@@ -10,7 +10,7 @@ const Loader = (props) => {
                 <p className="text-20 text-secondary">
                     Something went wrong
                 </p>
-                <a className="btn btn-w-md btn-warning" onClick={props.retry}>Retry</a>
+                <button className="btn btn-w-md btn-warning" onClick={props.retry}>Retry</button>
             </div>
         )
     } else if( props.timedOut){
@@ -20,6 +20,7 @@ const Loader = (props) => {
             <p className="text-20 text-secondary">
                 Taking a long time...
             </p>
+            <button className="btn btn-w-md btn-warning" onClick={props.retry}>Retry</button>
         </div>
         )
     }else if( props.pastDelay ){

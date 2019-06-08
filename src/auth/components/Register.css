@@ -19,10 +19,10 @@ body.blank .content {
     z-index: -2;
     left: 0;
     right: 0;
-    background-image: -webkit-radial-gradient(top, circle cover, #393b45 0%, #2d3038 70%);
-    background-image: -moz-radial-gradient(center, circle cover, #393b45 0%, #2d3038 70%);
-    background-image: -o-radial-gradient(center, circle cover, #393b45 0%, #2d3038 70%);
-    background-image: radial-gradient(center, circle cover, #393b45 0%, #2d3038 70%);
+    background-image: -webkit-radial-gradient(top, circle farthest-corner, #393b45 0%, #2d3038 70%);
+    background-image: -moz-radial-gradient(center, circle farthest-corner, #393b45 0%, #2d3038 70%);
+    background-image: -o-radial-gradient(center, circle farthest-corner, #393b45 0%, #2d3038 70%);
+    background-image: radial-gradient(center, circle farthest-corner, #393b45 0%, #2d3038 70%);
     background-position: 50%, 50%;
 }
 
